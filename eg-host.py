@@ -37,6 +37,9 @@ def portscanner () :
 				print ("")
 				print ("\033[1;31mthe open ports :")
 				print("\033[0;32m\033[1;32m[{}]   open".format(port))
+                        else :
+                                print ("all ports is close")
+
 def dns () :
 	dns = input ("\033[0;33m\033[1;33mEnter dns : ")
 	name = socket.getfqdn (dns)
